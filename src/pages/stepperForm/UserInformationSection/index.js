@@ -17,7 +17,7 @@ export default function UserInformationSection({ next, data }) {
         email: "",
         birthday: "",
         age: "",
-        selectBloodGroup: "",
+        bloodGroup: "",
         height: "",
         weight: "",
         gender: "",
@@ -96,12 +96,12 @@ export default function UserInformationSection({ next, data }) {
 
                     <FormikControl
                         control="select"
-                        name="selectBloodGroup"
-                        value={values.selectBloodGroup}
+                        name="bloodGroup"
+                        value={values.bloodGroup}
                         onBlur={handleBlur}
                         onChange={handleChange}
                         options={dropDownOptions}
-                        className={errors.selectBloodGroup && touched.selectBloodGroup && 'error'}
+                        className={errors.bloodGroup && touched.bloodGroup && 'error'}
                     />
 
                     <FormikControl

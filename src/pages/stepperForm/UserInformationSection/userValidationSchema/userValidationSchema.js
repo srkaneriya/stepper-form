@@ -9,7 +9,7 @@ export const userValidationSchema = Yup.object({
         .required('Email is a required field'),
     birthday: Yup.string().required('Birthday is a required field'),
     age: Yup.number().required('Age is a required field').positive(),
-    selectBloodGroup: Yup.string().required('BloodGroup is a required field'),
+    bloodGroup: Yup.string().required('BloodGroup is a required field'),
     height: Yup.number().required('Height is a required field').positive(),
     weight: Yup.number().required('Weight is a required field').positive(),
     gender: Yup.string().required('Please Select Your Gender'),
